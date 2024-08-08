@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --cor-destaque: #339C9F;
+    --cor-texto: #545454;
+    --cor-texto-claro: #ffffff;
+    --font: "Merriweather", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    width: 100vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top: 2%;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.login input{
+    border-radius: 5px;
+    border: 1px solid var(--cor-destaque);
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.login button{
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+    border: none;
+    padding: 7px 18px;
+    color: var(--cor-texto-claro);
+    cursor: pointer;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.308);
+}
+
+.login button:hover{
+    background-color: var(--cor-texto-claro);
+    color: var(--cor-destaque);
+    border: 2px solid var(--cor-destaque);
+    transition: 0.5s ease-in-out;
+}
+
+.cadastro-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor-destaque);
+    margin-top: 1.5rem;
+    
+}
+
+.form-cadastro{
+    display: none;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.form-cadastro form{
+    padding: 25px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-destaque);
+    font-weight: bold;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto-claro);
+    text-align: center;
+}
+
+.form-cadastro form input{
+    margin: 5px 0px 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-cadastro form button{
+    background-color: var(--cor-texto-claro);
+    border-radius: 5px;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.mural-aviso{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mural-aviso textarea{
+    border: 2px solid var(--cor-destaque);
+    border-radius: 8px;
+    height: 15rem;
+    width: 25rem;
+    margin-top: 5rem;
+    margin-left: 30%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.308);
+}
+
+.mural-aviso .textarea-texto{
+    font-size: 1rem;
+    padding: 10px 0px 0px 10px;
+    font-weight: 800;
+}
+
+.mural-aviso input{
+    margin-right: 30%;
+    margin-top: 4%;
+}
+
+.pagamento-comprovante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.pagamento-comprovante button{
+    background-color: var(--cor-destaque);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    color: var(--cor-texto-claro);
+    font-weight: 600;
+}
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>K-Fun Academy</title>
+  </head>
+  <body>
+    <header class="logo">
+      <img src="assets/k-fun-academy-logo.png" alt="logo-fun-academy" />
+    </header>
+
+    <section class="login">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Insira seu email" required
+      />
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="insira sua senha" required
+      />
+      <button type="submit">Login</button>
+    </section>
+
+    <div class="cadastro-link">
+      <a href="#">Cadastre-se aqui</a>
+    </div>
+
+    <div class="form-cadastro">
+      <form action="" id="formulario-cadastro">
+        <div class="form-grupo">
+          <label for="nome-usuario">Nome</label>
+          <input type="text" id="nome-usuario" name="nome-usuario" required />
+        </div>
+        <div class="form-grupo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-grupo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required />
+        </div>
+        <div class="form-grupo">
+          <label for="confirmarSenha">Confirme a Senha</label>
+          <input
+            type="password"
+            id="confirmarSenha"
+            name="confirmarSenha"
+            required
+          />
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+ 
+
+    <section class="mural-aviso">
+      <textarea name="mural-aviso" id="mural-aviso" class="textarea-texto">Seus avisos da semana:</textarea>
+    
+        <input type="file" name="btn-enviar-tarefa" id="btn-enviar-tarefa" />
+  
+    </section>
+
+    <section class="pagamento-comprovante">
+      <button class="btn-pagto">Pague sua próxima aula</button>
+      <input
+        type="file"
+        name="btn-enviar-comprovante"
+        id="btn-enviar-comprovante"
+      />
+    </section>
+
+    <section class="pagamento-confirmado">
+      <div class="como-estudar">
+        <img src="assets/_K-FunAcademy - método.png" alt="" />
+      </div>
+      <div class="materiais-para-download">
+        <h2>Seus materiais de apoio</h2>
+        <p>Faça o download aqui</p>
+        <a
+          href="https://drive.google.com/file/d/1gsJH3eH17y9waZ00piMFD3Z4P2703EVX/view?usp=sharing"
+          class="download-link"
+          target="_blank"
+          >Folhas de estudo 1</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1gsJH3eH17y9waZ00piMFD3Z4P2703EVX/view?usp=sharing"
+          class="download-link"
+          target="_blank"
+          >Folha de estudos 2</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1gsJH3eH17y9waZ00piMFD3Z4P2703EVX/view?usp=sharing"
+          class="download-link"
+          target="_blank"
+          >Download áudio</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1gsJH3eH17y9waZ00piMFD3Z4P2703EVX/view?usp=sharing"
+          class="download-link"
+          target="_blank"
+          >Folha de vocabulário</a
+        >
+      </div>
+      <a href="#" class="btn-logar-na-call">Entrar na sala</a>
+    </section>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
