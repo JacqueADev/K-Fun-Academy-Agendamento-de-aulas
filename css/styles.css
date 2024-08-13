@@ -69,11 +69,14 @@ body{
     
 }
 
-.form-cadastro{
+#formularioDeCadastro{
     display: none;
-    /*display: flex;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
+}
+
+#formularioDeCadastro.show{
+    display: flex;
 }
 
 .form-cadastro form{
@@ -146,6 +149,53 @@ body{
     border-radius: 5px;
     color: var(--cor-texto-claro);
     font-weight: 600;
+    cursor: pointer;
+}
+
+.pagamento-confirmado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     margin-left: 15%;
+     margin-top: 5rem;
+}
+
+.pagamento-confirmado .materiais-para-download{
+    margin-right: 20%; 
+}
+
+.materiais-para-download h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--cor-destaque);
+}
+
+
+.materiais-para-download .download-link{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+
+}
+
+.btn-logar-na-call-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.btn-logar-na-call{
+    text-decoration: none;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto-claro);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 10px 35px;
+    cursor: pointer;
 }
 
 
