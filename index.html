@@ -14,17 +14,17 @@
     <section class="login">
       <input
         type="email"
-        name="email"
-        id="email"
+        name="email-login"
+        id="email-login"
         placeholder="Insira seu email" required
       />
       <input
         type="password"
-        name="senha"
-        id="senha"
+        name="senha-login"
+        id="senha-login"
         placeholder="insira sua senha" required
       />
-      <button type="submit">Login</button>
+      <button type="submit" id="loginButton">Login</button>
     </section>
 
     <div class="cadastro-link" >
@@ -35,7 +35,7 @@
       <form action="" id="formulario-cadastro">
         <div class="form-grupo">
           <label for="nome-usuario">Nome</label>
-          <input type="text" id="nome-usuario" name="nome-usuario" required />
+          <input type="text" id="nome" name="nome" required />
         </div>
         <div class="form-grupo">
           <label for="email">Email</label>
@@ -45,16 +45,7 @@
           <label for="senha">Senha</label>
           <input type="password" id="senha" name="senha" required />
         </div>
-        <div class="form-grupo">
-          <label for="confirmarSenha">Confirme a Senha</label>
-          <input
-            type="password"
-            id="confirmarSenha"
-            name="confirmarSenha"
-            required
-          />
-        </div>
-        <button type="submit">Cadastrar</button>
+        <button type="submit" class="cadastro-btn">Cadastrar</button>
       </form>
     </div>
 
