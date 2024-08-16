@@ -16,7 +16,12 @@
 
 body{
     width: 100vw;
+
 }
+
+body > *:not(header):not(.login):not(.cadastro-link) {
+    display: none;
+  }
 
 .logo{
   display: flex;
