@@ -38,15 +38,15 @@ document.getElementById('formulario-cadastro').addEventListener('submit', functi
 // Função para buscar dados da planilha Google Sheets
 function getSheetData() {
   var spreadsheetId = '18mK5b2F-WCk4ImuPzUhj6OO4HMNG_fHa71wlyVSGkiU'; // Substitua com o ID da sua planilha
-  var range = "Dados!A1:C100"; // Defina o intervalo que você deseja buscar
+  var range = "Dados!B1:C100"; // Defina o intervalo que você deseja buscar
   var apiKey = 'AIzaSyDt2KGKqEzruw2lqgL5BH58jH7NW55TAng'; // Substitua com sua API key
 
   fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`)
     .then((response) => response.json())
     .then((data) => {
       const arrayDeObjetos = data.values.map((linha) => {
-        const [name, link] = linha;
-        return { name, link };
+        const [name, email, password] = linha;
+        return { name, email, password };
       });
       console.log(arrayDeObjetos); // Exibe os dados da planilha no console
     })
